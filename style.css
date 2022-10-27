@@ -1,28 +1,36 @@
-body{
-    width: 100vw;
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    background-color: white;
+    color: black;
     font-family: 'Piazzolla', serif;
 }
 
 .nav-container{
+    position:fixed;
+    top:0px;
     width: 100%;
-    /* height: 42px; */
-    /* border: 1px solid black; */
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: pink;
-    /* position: fixed; */
-    top:0;
+    z-index:100;
+
     
 }
 .icon{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
-.icon-container{
-    margin-right: 10px;
+.icon-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
 }
 h2{
@@ -31,42 +39,61 @@ h2{
 .text-container{
     border: 1px solid black;
 }
-.landingpage{
-    border: 1px solid black;
-    max-width: 1020px;
+.landingpage-container{
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-.hero{
+
+.landingpage-img{
     width: 300px;
 }
-.content-L{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .bottom-container{
-    border: 1px solid black;
-    border: 1px solid black;
-    max-width: 1020px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   /* font-size: 30px;
+   line-height: 36px;
+   margin-bottom: 6px; */
+   scroll-margin-top: 100px;
 }
-.bottom-text-container{
-    border: 1px solid black;
-    max-width: 1020px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.bottom-h2{
+text-align: center;
+font-size: 36px;
+line-height: 40px;
+margin-bottom: 12px;
 }
-.bottom-button-container{
-    border: 1px solid black;
-    border: 1px solid black;
-    max-width: 1020px;
+.bottom-text{
+color: #6b7280;
+padding: 0px 20px 5px 20px;
+max-width: 896px;
+text-align: center;
+margin:  0 auto;
+
+}
+
+.bottom-chip-container{
     display: flex;
+    gap: 8px;
     justify-content: center;
-    align-items: center;
+    margin: 8px;
+    padding: 0px 12px;
+}
+
+.chip{
+    padding: 4px 12px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 9999px;
+    background: pink;
+    
+}
+button{
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 60px;
+    background: pink;
+    cursor: pointer;
 }
