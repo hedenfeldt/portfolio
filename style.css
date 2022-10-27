@@ -36,8 +36,9 @@ body{
 h2{
     margin-left: 10px;
 }
-.text-container{
+.landingpage-text-container{
     border: 1px solid black;
+    
 }
 .landingpage-container{
     min-height: 85vh;
@@ -50,6 +51,14 @@ h2{
 
 .landingpage-img{
     width: 300px;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 60px;
+    background: pink;
+    cursor: pointer;
 }
 
 .bottom-container{
@@ -90,10 +99,12 @@ margin:  0 auto;
     background: pink;
     
 }
-button{
-    border: 1px solid black;
-    border-radius: 6px;
-    width: 60px;
-    background: pink;
-    cursor: pointer;
+
+@media screen and (max-width:400px){
+    .nav-container{
+        flex-direction: column;
+    }
+    .landingpage-container{
+        flex-direction: column;
+    }
 }
