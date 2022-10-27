@@ -2,26 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box
+    
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-color: white;
     color: black;
     font-family: 'Piazzolla', serif;
+    
 }
 
 .nav-container{
     position:fixed;
     top:0px;
     width: 100%;
-    padding: 10px 20px;
+    padding: 2px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: pink;
     z-index:100;
 
-    
 }
+
 .icon{
     width: 20px;
     height: 20px;
@@ -39,6 +44,7 @@ h2{
 .landingpage-text-container{
     border: 1px solid black;
     
+    
 }
 .landingpage-container{
     min-height: 85vh;
@@ -50,7 +56,7 @@ h2{
 }
 
 .landingpage-img{
-    width: 300px;
+    width: 20%;
 }
 
 button{
@@ -100,11 +106,42 @@ margin:  0 auto;
     
 }
 
-@media screen and (max-width:400px){
+   .project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   } 
+   .project{
+    background-color: rgba(0, 0, 0, 0.567);
+   }
+   .img-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+   }
+   .img-container img{
+    max-width: 1024px;
+    object-fit: cover;
+    padding: 20px;
+    position: relative;
+    
+   }
+
+/* .img-overlay{
+    position:absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.452);
+
+} */
+
+
+@media screen and (max-width:500px){
     .nav-container{
         flex-direction: column;
     }
     .landingpage-container{
         flex-direction: column;
+        margin-left: 50px;
     }
 }
